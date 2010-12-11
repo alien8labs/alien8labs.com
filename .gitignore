@@ -1,0 +1,12 @@
+*.DS_Store
+.rvmrc
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+config/database.yml
+rerun.txt
+coverage/*
+public/system
+tmp/*
+.metrics
