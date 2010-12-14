@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alien8labsCom</title>
+  <title>Alien-8 Labs, Giving Awesome to the Web</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= yield :custom_css %>
+
+  <%= javascript_include_tag :defaults, 'global' %>
+  <%= yield :custom_js %>
+
+  <script type="text/javascript" src="http://use.typekit.com/ezm3tzw.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="header">
+    <div class="wrapper">
+      <a class="logo" href="#header"></a>
+        <h1><a href="/"><strong>Alien-8 Labs</strong><span>Giving awesome to the web</span></a></h1>
+    </div>
+  </div>
+  <div id="nav">
+    <div class="wrapper">
+      <ul class="links">
+        <li><a href="#">About</a></li>
+        <li><%= link_to 'Articles', articles_path %></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul id="social-networks">
+        <li class="right"><%= link_to image_tag('facebook_32.png'), 'http://facebook.com/alien8labs' %></li>
+        <li><%= link_to image_tag('twitter_32.png'), 'http://twitter.com/alien8labs' %></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <div class="wrapper">
+      <div id="main">
+        <%= yield :tagline %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="wrapper">
+    </div>
+  </div>
 </body>
 </html>

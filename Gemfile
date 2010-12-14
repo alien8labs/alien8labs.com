@@ -7,6 +7,8 @@ gem 'silent-postgres'
 gem 'hoptoad_notifier'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
+gem 'devise'
+gem 'paperclip'
 
 
 group :test do
@@ -23,4 +25,6 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'metric_fu'
+  gem 'faker'
+  gem 'populator'
 end

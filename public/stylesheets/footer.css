@@ -1,0 +1,17 @@
+#footer {
+  border-top: 1px dotted #DED08A;
+  clear: both;
+  color: #A1934B;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  margin: 20px auto 0px;
+  padding: 15px 0px 10px;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.496094) 0px 1px 0px;
+  text-transform: uppercase;
+  height: 200px;
+  background-color: #F1E4A1;
+}
+
+
+

@@ -1,0 +1,22 @@
+<div class="article" id="article-<%= article.id %>">
+  <h2><a href="/cafes/640-everyman-espresso"><%= article.title %></a></h2>
+  <div class="tags"><%= article.tags.join(', ') %></div>
+  <div class="article-content">
+    <span class="legend">
+      <span>Written by</span>
+    </span>
+    <div class="details">
+      <div class="author">
+        <%= link_to image_tag(article.author.profile.avatar.url(:small)), '#', :class => 'author-photo' %>
+        <%= link_to article.author.name, '#' %>
+      </div>
+      <%= link_to '0 comments', '#', :class => 'comment-count' %>
+    </div>
+    <div class="body small"><p><%= article.abstract %></p></div>
+    <div class="additionals">
+      <span><%= article.published_on.to_s(:long) %></span>
+      <%= link_to 'Read the full article', article_path(article) %>
+    </div>
+  </div>
+</div>
+

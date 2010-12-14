@@ -1,0 +1,44 @@
+html {
+  background-color: #FFFFFF;
+}
+
+head {
+  display: none;
+}
+
+body {
+  color: #3D3939;
+  font: normal normal normal 16px/1.5 ff-tisa-web-pro-1, ff-tisa-web-pro-2, Helvetica, Arial, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #3D3939;
+}
+
+a:hover {
+  color: #7D1111;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0px;
+}
+
+strong, b {
+  font-weight: bolder;
+}
+
+p {
+  margin: 0px 0px 10px;
+}

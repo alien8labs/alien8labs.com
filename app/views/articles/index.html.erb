@@ -1,0 +1,9 @@
+<% content_for :custom_js do %>
+  <%= javascript_include_tag 'jquery.infinitescroll', 'articles.infinitescroll' %>
+<% end %>
+
+<% tagline('The fun is in learning something every day.  Here are some of our recent finds.') %>
+
+<%= render @articles %>
+
+<div id="articles-loading"><div>Loading more articles...</div></div>

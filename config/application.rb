@@ -41,7 +41,6 @@ module Alien8labsCom
 
     # Configure default generator behavior
     config.generators do |g|
-      g.controller_specs false
       g.view_specs       false
       g.helper           false
     end
